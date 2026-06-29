@@ -77,3 +77,38 @@ body{
     margin-left:260px;
     padding:30px;
 }
+
+/* ======================
+   FRONTEND NAVBAR
+====================== */
+
+.navbar{
+    background: var(--navbar) !important;
+    min-height: 70px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.15);
+}
+
+.navbar-brand{
+    color: #fff !important;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.navbar-brand:hover{
+    color: #A5D7E8 !important;
+}
+
+.navbar .nav-link{
+    color: rgba(255,255,255,.9) !important;
+    font-weight: 500;
+    margin-left: 10px;
+    transition: .3s;
+}
+
+.navbar .nav-link:hover{
+    color: #A5D7E8 !important;
+}
+
+.navbar-toggler{
+    border-color: rgba(255,255,255,.3);
+}
