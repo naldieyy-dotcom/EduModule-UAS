@@ -1,0 +1,79 @@
+/* ===========================
+   EduModule Design System
+=========================== */
+
+:root{
+    --sidebar:#0B2447;
+    --navbar:#19376D;
+    --card:#576CBC;
+    --accent:#A5D7E8;
+    --background:#F5F7FA;
+    --text:#1F2937;
+    --white:#ffffff;
+}
+
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:'Poppins',sans-serif;
+}
+
+.bg-navbar{
+    background:var(--navbar);
+}
+
+.bg-sidebar{
+    background:var(--sidebar);
+}
+
+.bg-card{
+    background:var(--card);
+}
+
+.btn-primary-custom{
+    background:var(--navbar);
+    color:#fff;
+    border:none;
+}
+
+.btn-primary-custom:hover{
+    background:var(--sidebar);
+    color:#fff;
+}
+
+/* ======================
+   SIDEBAR
+====================== */
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#0B2447;
+    position:fixed;
+}
+
+.menu-item{
+    color:white;
+    text-decoration:none;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:8px;
+    transition:.3s;
+}
+
+.menu-item:hover{
+    background:#19376D;
+    color:white;
+}
+
+.active-menu{
+    background:#19376D;
+    color:white !important;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.main-content{
+    margin-left:260px;
+    padding:30px;
+}
