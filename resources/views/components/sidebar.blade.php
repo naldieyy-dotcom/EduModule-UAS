@@ -1,37 +1,46 @@
 <aside class="sidebar">
 
-    <div class="sidebar-header">
-        <h3>📚 EduModule</h3>
+    <div class="logo">
+        📚 EduModule
     </div>
 
-    <nav class="sidebar-menu">
+    <nav>
 
         <a href="{{ route('dashboard') }}"
-           class="menu-item {{ request()->routeIs('dashboard') ? 'active-menu' : '' }}">
+        class="{{ request()->routeIs('dashboard') ? 'active' : '' }}">
+
             <i class="bi bi-house-door-fill"></i>
-            <span>Dashboard</span>
+            Dashboard
+
         </a>
 
         <a href="{{ route('modul.index') }}"
-           class="menu-item {{ request()->routeIs('modul.*') ? 'active-menu' : '' }}">
+        class="{{ request()->routeIs('modul.*') ? 'active' : '' }}">
+
             <i class="bi bi-book-fill"></i>
-            <span>Data Modul</span>
+            Data Modul
+
         </a>
 
-        <a href="{{ route('export.pdf') }}"
-           class="menu-item {{ request()->routeIs('export.pdf') ? 'active-menu' : '' }}">
+        <a href="{{ route('export.pdf') }}">
+
             <i class="bi bi-file-earmark-pdf-fill"></i>
-            <span>Export PDF</span>
+            Export PDF
+
         </a>
 
     </nav>
 
-    <form action="{{ route('logout') }}" method="POST" class="logout-form">
+    <form action="{{ route('logout') }}" method="POST">
+
         @csrf
 
-        <button type="submit" class="menu-item logout-btn">
+        <button>
+
             <i class="bi bi-box-arrow-right"></i>
-            <span>Logout</span>
+
+            Logout
+
         </button>
 
     </form>
